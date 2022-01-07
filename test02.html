@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브랜드명</title>
+</head>
+
+<body>
+    <!--웹표준 : HTML5 로 제작이 되어있다. 
+                 css3로 디자인했다. 
+                 explorer 11버전 이상만 인식된다. 10 이하는 인식 불가하므로 div 로만 작업해야함
+                 시멘틱 태그 : 용도가 정해진 태그 (header, section, nav, article, footer, aside:사이드 광고, figure:이미지)-->
+    <header>
+        <h1>로고:글씨가 필수</h1>
+        <nav>메뉴 중에서도 검색 대상이 되는 것들</nav>
+    </header>
+    <nav>외부에서 검색이 되고 싶으면 사용한다.</nav>
+    <section>
+        <div>division:영역_내용을 넣는 것 / 포토샵의 layer 개념</div>
+        <article>주제가 하나로써 따로 빼도 되는 내용
+            <figure>
+                <img src="http://placekitten.com/400/300" alt="">
+                <img src="http://www.placehold.it/300x200" alt="">
+                <!--위 두 주소는 임시 이미지를 넣을 수 있는 주소 / 가로/세로-->
+                <img src="./images/chocolate.jpg" alt="">
+                <img src="./images/chocolate.jpg" width="200" alt="3개의 갈색 초콜릿이 쌓여 있다.">
+                <!--기본적인 가로너비는 픽셀 단위 기준으로 저장된다.
+                         height와 width는 비율에 맞추어 저장하여야 하며 width에 따라 height는 자동으로 조절됨 / alt : 이미지에 대한 설명_웹 접근성을 위한 것-->
+                <img src="./images/chocolate.jpg" width="50%">
+                <!--% 단위는 생략할 수 없다. 나(img)의 부모의 너비를 기준으로 % 비율로 사용한다. 현재는 부모가 모든 브라우저 너비의 100%의 상태이다.-->
+            </figure>
+        </article>
+    </section>
+    <footer>
+        <address>회사주소, 연락처</address>
+    </footer>
+</body>
+
+</html>
